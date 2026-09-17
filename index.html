@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Firdaus Bashir Ahmed — Senior Software Engineer specializing in Microsoft Power Platform, Power BI and Generative AI.">
+  <title>Firdaus Bashir Ahmed | Power Platform & Generative AI</title>
+  <style>
+    :root{
+      --bg:#f7f9fc; --card:#ffffff; --text:#172033; --muted:#647084;
+      --accent:#2563eb; --accent2:#7c3aed; --line:#e6eaf0; --dark:#0f172a;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .nav-inner{max-width:1120px;margin:auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between}
+    .brand{font-weight:800;letter-spacing:-.02em}.brand span{color:var(--accent)}
+    .nav-links{display:flex;gap:22px;font-size:14px;color:var(--muted)}.nav-links a:hover{color:var(--accent)}
+    .hero{max-width:1120px;margin:auto;padding:76px 24px 64px;display:grid;grid-template-columns:1.35fr .65fr;gap:60px;align-items:center}
+    .eyebrow{display:inline-flex;padding:7px 12px;border-radius:999px;background:#eaf1ff;color:#1d4ed8;font-size:13px;font-weight:700;margin-bottom:18px}
+    h1{font-size:clamp(42px,6vw,70px);line-height:1.03;letter-spacing:-.055em;margin:0 0 18px}
+    .gradient{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero p{font-size:19px;color:var(--muted);max-width:720px;margin:0 0 28px}
+    .buttons{display:flex;flex-wrap:wrap;gap:12px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:10px;font-weight:700;border:1px solid var(--line);background:#fff}
+    .btn.primary{background:var(--dark);color:#fff;border-color:var(--dark)}.btn:hover{transform:translateY(-1px)}
+    .photo-wrap{display:flex;justify-content:center}.photo{width:min(330px,80vw);aspect-ratio:1/1;border-radius:30px;object-fit:cover;box-shadow:0 24px 60px rgba(15,23,42,.18);border:7px solid white}
+    .section{max-width:1120px;margin:auto;padding:64px 24px}.section.alt{max-width:none;background:#fff}.section-inner{max-width:1120px;margin:auto}
+    .section h2{font-size:32px;letter-spacing:-.035em;margin:0 0 10px}.lead{color:var(--muted);margin:0 0 28px}
+    .chips{display:flex;flex-wrap:wrap;gap:10px}.chip{padding:9px 13px;background:#fff;border:1px solid var(--line);border-radius:999px;font-size:14px;font-weight:600}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 8px 25px rgba(15,23,42,.04)}
+    .card h3{margin:0 0 5px;font-size:19px}.card p{margin:0;color:var(--muted);font-size:14px}.card .date{font-size:13px;color:var(--accent);font-weight:700;margin-bottom:10px}
+    .experience{display:grid;gap:18px}.role{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px}.role-top{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.role h3{margin:0;font-size:20px}.company{font-weight:700;color:var(--accent)}.role .date{color:var(--muted);font-size:14px;white-space:nowrap}
+    .role ul{margin:15px 0 0;padding-left:20px}.role li{margin:7px 0;color:#445066}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:28px 0}.stat{padding:18px;border-radius:16px;background:#fff;border:1px solid var(--line)}.stat strong{display:block;font-size:28px}.stat span{font-size:13px;color:var(--muted)}
+    .contact{background:var(--dark);color:#fff;border-radius:24px;padding:38px}.contact p{color:#cbd5e1}.contact .btn{background:#fff;border-color:#fff;color:var(--dark)}
+    footer{padding:28px 24px;text-align:center;color:var(--muted);font-size:13px}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:48px;gap:35px}.photo-wrap{order:-1}.photo{width:230px;border-radius:24px}.grid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.nav-links{display:none}.role-top{flex-direction:column;gap:4px}}
+    @media(max-width:520px){.section{padding:48px 18px}.hero{padding:42px 18px}.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}h1{font-size:44px}.hero p{font-size:17px}}
+  </style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#">Firdaus<span>.</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div>
+    <div class="eyebrow">Senior Software Engineer • Hyderabad, India</div>
+    <h1>Power Platform.<br><span class="gradient">Power BI. Generative AI.</span></h1>
+    <p>11+ years of experience building enterprise solutions across Microsoft Power Platform, Power BI, data engineering and Generative AI. Currently leading a 4-member team at PwC.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#contact">Let's Connect</a>
+      <a class="btn" href="Firdaus_Bashir_Ahmed_Resume.docx" download>Download Resume</a>
+    </div>
+  </div>
+  <div class="photo-wrap"><img class="photo" src="profile.jpg" alt="Firdaus Bashir Ahmed"></div>
+</header>
+
+<section class="section" id="about">
+  <h2>About me</h2>
+  <p class="lead">I specialize in translating business requirements into scalable, high-performance Microsoft solutions, with a growing focus on Generative AI integration.</p>
+  <div class="stats">
+    <div class="stat"><strong>11+</strong><span>Years of experience</span></div>
+    <div class="stat"><strong>4</strong><span>Engineers currently led</span></div>
+    <div class="stat"><strong>100+</strong><span>Users supported on a major app</span></div>
+    <div class="stat"><strong>4</strong><span>Enterprise organizations</span></div>
+  </div>
+</section>
+
+<section class="section alt" id="skills">
+  <div class="section-inner">
+    <h2>Core expertise</h2>
+    <p class="lead">A combination of application development, analytics, automation and AI.</p>
+    <div class="grid">
+      <div class="card"><h3>Generative AI</h3><p>Copilot Studio, Azure OpenAI integration, prompt-driven automation and AI-enabled Power Platform solutions.</p></div>
+      <div class="card"><h3>Power Platform</h3><p>Power Apps (Canvas & Model-Driven), Power Automate, Power Virtual Agents and Dataverse.</p></div>
+      <div class="card"><h3>Business Intelligence</h3><p>Power BI, DAX, data modeling, SSRS and Microsoft Fabric R&amp;D.</p></div>
+      <div class="card"><h3>Data Engineering</h3><p>SSIS, T-SQL, Azure SQL Server, stored procedures, joins, sub-queries and Data Flows.</p></div>
+      <div class="card"><h3>Delivery & ALM</h3><p>Azure DevOps, Agile delivery, environment deployments, requirement analysis and solution architecture.</p></div>
+      <div class="card"><h3>Leadership</h3><p>Team mentoring, stakeholder communication, technical guidance and delivery ownership.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="experience">
+  <h2>Professional experience</h2>
+  <p class="lead">Enterprise delivery across PwC, TietoEvry, Capgemini and Cognizant.</p>
+  <div class="experience">
+    <article class="role">
+      <div class="role-top"><div><h3>Senior Associate II</h3><div class="company">PwC — Hyderabad</div></div><div class="date">May 2022 – Present</div></div>
+      <ul>
+        <li>Lead a team of 4 engineers delivering a Canvas App workflow for audit document review and approval.</li>
+        <li>Improve Dataverse CRUD performance using plugins and optimize Power Apps Checker findings.</li>
+        <li>Implement pagination for large data volumes and FetchXML-based querying for faster Power Automate flows.</li>
+        <li>Integrate Azure OpenAI through Power Automate to auto-summarize audit documents and reduce manual review effort.</li>
+        <li>Build Power BI dashboards aligned to stakeholder reporting requirements.</li>
+        <li>Previously delivered a 9-screen Canvas App plus Model-Driven admin app for 100+ end users.</li>
+      </ul>
+    </article>
+    <article class="role">
+      <div class="role-top"><div><h3>Senior Software Engineer — Power Platform & Power BI</h3><div class="company">TietoEvry India — Pune</div></div><div class="date">Jul 2018 – May 2022</div></div>
+      <ul>
+        <li>Led enterprise Power BI dashboard development for leadership reporting.</li>
+        <li>Delivered end-to-end solutions across Power BI, Power Apps, Power Automate, SQL Server and Forms Pro.</li>
+        <li>Built OLAP cubes and aggregated measures in AOT and embedded Power BI into Dynamics 365 ERP.</li>
+        <li>Designed SSIS pipelines for Dynamics 365 BYOD data and mentored junior engineers.</li>
+      </ul>
+    </article>
+    <article class="role">
+      <div class="role-top"><div><h3>Associate Consultant — Power BI & SSIS</h3><div class="company">Capgemini India — Pune</div></div><div class="date">Apr 2017 – Jun 2018</div></div>
+      <ul><li>Built and optimized SSIS packages for SQL Server warehousing and developed Power BI reports.</li><li>Guided new team members and received the Rising Star Award in August 2017.</li></ul>
+    </article>
+    <article class="role">
+      <div class="role-top"><div><h3>Programmer Analyst — MSBI Developer</h3><div class="company">Cognizant Technology Solutions — Pune</div></div><div class="date">Jul 2014 – Jan 2017</div></div>
+      <ul><li>Delivered an ETL-driven data warehouse using SSIS and dimensional modeling for a British Telecom managed-services client.</li><li>Developed SQL/C#.NET ETL scripts and SSRS reports.</li></ul>
+    </article>
+  </div>
+</section>
+
+<section class="section alt" id="certifications">
+  <div class="section-inner">
+    <h2>Certifications & education</h2>
+    <div class="grid">
+      <div class="card"><div class="date">MICROSOFT</div><h3>PL-300</h3><p>Microsoft Certified: Power BI Data Analyst Associate</p></div>
+      <div class="card"><div class="date">MICROSOFT</div><h3>PL-900</h3><p>Microsoft Certified: Power Platform Fundamentals</p></div>
+      <div class="card"><div class="date">IN PROGRESS</div><h3>PL-600 & CCDV-F</h3><p>PL-600 and Claude Certified Developer – Foundations</p></div>
+      <div class="card"><div class="date">2014</div><h3>Master of Computer Applications</h3><p>Sinhgad Institute of Management, Pune University — 70%</p></div>
+      <div class="card"><div class="date">2011</div><h3>B.Sc. Computer Science</h3><p>Vivekanand College, Shivaji University — 78.00%</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="contact">
+    <h2>Let's connect</h2>
+    <p>For recruiter opportunities, Power Platform leadership roles, enterprise automation, Power BI or Generative AI projects.</p>
+    <div class="buttons">
+      <a class="btn" href="mailto:firdausahmed2@gmail.com">Email me</a>
+      <a class="btn" href="tel:+919890527264">Call</a>
+      <a class="btn" href="Firdaus_Bashir_Ahmed_Resume.docx" download>Resume</a>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Firdaus Bashir Ahmed · Senior Software Engineer · Hyderabad, India</footer>
+</body>
+</html>
